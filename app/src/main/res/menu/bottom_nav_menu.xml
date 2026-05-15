@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_anasayfa"
+        android:icon="@drawable/ic_home"
+        android:title="Anasayfa"/>
+    <item
+        android:id="@+id/nav_kutuphane"
+        android:icon="@drawable/ic_menu_book"
+        android:title="Kütüphanem"/>
+    <item
+        android:id="@+id/nav_ekle"
+        android:icon="@drawable/ic_add_circle"
+        android:title="Ekle"/>
+    <item
+        android:id="@+id/nav_istatistik"
+        android:icon="@drawable/ic_bar_chart"
+        android:title="İstatistik"/>
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/ic_person"
+        android:title="Profil"/>
+</menu>

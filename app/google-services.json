@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "238643534196",
+    "project_id": "kitaplikapp-fa529",
+    "storage_bucket": "kitaplikapp-fa529.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238643534196:android:a2d40637f11122a9c87421",
+        "android_client_info": {
+          "package_name": "com.example.kutuphaneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238643534196-qnnu7rbav1er1kpla6ncqrql82v3a9ij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kutuphaneapp",
+            "certificate_hash": "b09523ef9ad7de600f79cba1ca1b2c2d6fe582e9"
+          }
+        },
+        {
+          "client_id": "238643534196-38bc80fv7op8d48jhqtu67qmh1hkoc9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZgZSzn_YArc8-L88M8yFSbvEPYvN0TJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238643534196-38bc80fv7op8d48jhqtu67qmh1hkoc9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

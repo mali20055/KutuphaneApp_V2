@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"C:\\\\Projects\\\\kutuphaneAppLibrary\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Projects\\\\kutuphaneAppLibrary\" -Directory -Recurse)",
+      "Bash(Get-ChildItem *)",
+      "Bash(Remove-Item \"C:\\\\Projects\\\\kutuphaneAppLibrary\\\\app\\\\src\\\\main\\\\java\\\\com\\\\example\\\\kutuphaneapp\\\\LoginFragment.kt\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Projects\\\\kutuphaneAppLibrary\\\\app\\\\src\\\\main\\\\java\\\\com\\\\example\\\\kutuphaneapp\\\\RegisterFragment.kt\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Projects\\\\kutuphaneAppLibrary\\\\app\\\\src\\\\main\\\\java\\\\com\\\\example\\\\kutuphaneapp\\\\SearchFragment.kt\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Projects\\\\kutuphaneAppLibrary\\\\app\\\\src\\\\main\\\\res\\\\navigation\\\\nav_graph.xml\" -Force)",
+      "Bash(Remove-Item \"C:\\\\Projects\\\\kutuphaneAppLibrary\\\\app\\\\src\\\\main\\\\res\\\\layout\\\\fragment_login.xml\" -Force)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)"
+    ]
+  }
+}

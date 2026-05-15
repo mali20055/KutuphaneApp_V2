@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">kutuphaneApp</string>
+    <string name="stats_title">İstatistikler</string>
+    <string name="total_books">Toplam Kitap</string>
+    <string name="read_books">Okunan Kitap</string>
+    <string name="total_pages">Toplam Sayfa Sayısı</string>
+    <string name="zero">0</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+
+    <!-- Bölüm başlıkları -->
+    <string name="settings_section_appearance">GÖRÜNÜM</string>
+    <string name="settings_section_notifications">BİLDİRİMLER</string>
+    <string name="settings_section_library">KÜTÜPHANE</string>
+    <string name="settings_section_data">VERİ</string>
+    <string name="settings_section_account">HESAP</string>
+    <string name="settings_section_about">UYGULAMA HAKKINDA</string>
+
+    <!-- Görünüm -->
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_desc">Uygulama görünüm temasını seçin</string>
+    <string name="settings_theme_light">Açık</string>
+    <string name="settings_theme_dark">Koyu</string>
+    <string name="settings_theme_system">Sistem Varsayılanı</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_desc">Uygulama dilini değiştirin</string>
+    <string name="settings_language_tr">Türkçe</string>
+    <string name="settings_language_en">İngilizce</string>
+
+    <!-- Bildirimler -->
+    <string name="settings_notifications">Okuma Hatırlatıcısı</string>
+    <string name="settings_notifications_desc">Günlük okuma hatırlatıcısını etkinleştir</string>
+    <string name="settings_reminder_time">Hatırlatıcı Saati</string>
+    <string name="settings_reminder_time_desc">Bildirimin gönderileceği saati seçin</string>
+
+    <!-- Kütüphane -->
+    <string name="settings_sort_order">Varsayılan Sıralama</string>
+    <string name="settings_sort_order_desc">Kitapların varsayılan sıralama düzeni</string>
+    <string name="settings_sort_date">Eklenme Tarihi</string>
+    <string name="settings_sort_title">Başlık</string>
+    <string name="settings_sort_author">Yazar</string>
+    <string name="settings_sort_rating">Puan</string>
+    <string name="settings_view_mode">Görünüm Modu</string>
+    <string name="settings_view_mode_desc">Kütüphane liste veya grid görünümü</string>
+    <string name="settings_view_list">Liste</string>
+    <string name="settings_view_grid">Grid</string>
+
+    <!-- Veri -->
+    <string name="settings_export_csv">Dışa Aktar (CSV)</string>
+    <string name="settings_export_csv_desc">Kitaplarınızı CSV dosyası olarak indirin</string>
+    <string name="settings_import_csv">İçe Aktar (Goodreads CSV)</string>
+    <string name="settings_import_csv_desc">Goodreads kitaplarınızı uygulamaya aktarın</string>
+    <string name="settings_backup">Yedekle</string>
+    <string name="settings_backup_desc">Kitaplarınızı Firebase\'e JSON olarak yükleyin</string>
+    <string name="settings_restore">Geri Yükle</string>
+    <string name="settings_restore_desc">Firebase yedeğinden kitaplarınızı geri getirin</string>
+
+    <!-- Hesap -->
+    <string name="settings_change_email">E-posta Değiştir</string>
+    <string name="settings_change_email_desc">Hesap e-posta adresinizi güncelleyin</string>
+    <string name="settings_change_password">Şifre Değiştir</string>
+    <string name="settings_change_password_desc">Hesap şifrenizi güncelleyin</string>
+    <string name="settings_delete_account">Hesabı Sil</string>
+    <string name="settings_delete_account_desc">Hesabınızı ve tüm verilerinizi kalıcı olarak silin</string>
+    <string name="settings_logout">Çıkış Yap</string>
+    <string name="settings_logout_desc">Hesabınızdan güvenli çıkış yapın</string>
+
+    <!-- Uygulama hakkında -->
+    <string name="settings_version">Versiyon</string>
+    <string name="settings_privacy_policy">Gizlilik Politikası</string>
+    <string name="settings_privacy_policy_desc">Kişisel veri kullanım politikamızı okuyun</string>
+    <string name="settings_feedback">Geri Bildirim Gönder</string>
+    <string name="settings_feedback_desc">Bize e-posta ile ulaşın</string>
+
+    <!-- Dialog başlıkları -->
+    <string name="dialog_select_theme">Tema Seç</string>
+    <string name="dialog_select_language">Dil Seç</string>
+    <string name="dialog_select_sort">Sıralama Seç</string>
+    <string name="dialog_select_view">Görünüm Seç</string>
+    <string name="dialog_change_email">E-posta Değiştir</string>
+    <string name="dialog_change_password">Şifre Değiştir</string>
+    <string name="dialog_delete_account">Hesabı Sil</string>
+    <string name="dialog_restore_confirm">Geri Yükleme Onayı</string>
+    <string name="dialog_logout_title">Çıkış Yap</string>
+
+    <!-- Dialog mesajları -->
+    <string name="dialog_delete_account_message">Bu işlem geri alınamaz. Tüm kitaplarınız ve verileriniz kalıcı olarak silinecektir.</string>
+    <string name="dialog_restore_message">Mevcut kitaplarınızın üzerine yedek verileri yazılacak. Devam etmek istiyor musunuz?</string>
+    <string name="dialog_logout_message">Hesabınızdan çıkış yapmak istediğinizden emin misiniz?</string>
+
+    <!-- Hint'ler -->
+    <string name="hint_current_password">Mevcut Şifre</string>
+    <string name="hint_new_email">Yeni E-posta</string>
+    <string name="hint_new_password">Yeni Şifre</string>
+
+    <!-- Butonlar -->
+    <string name="btn_confirm">Onayla</string>
+    <string name="btn_cancel">İptal</string>
+    <string name="btn_delete">Sil</string>
+    <string name="btn_logout">Çıkış Yap</string>
+
+    <!-- Durum mesajları -->
+    <string name="msg_export_success">CSV başarıyla dışa aktarıldı</string>
+    <string name="msg_import_success">kitap başarıyla içe aktarıldı</string>
+    <string name="msg_backup_success">Yedekleme başarıyla tamamlandı</string>
+    <string name="msg_restore_success">Geri yükleme başarıyla tamamlandı</string>
+    <string name="msg_email_changed">E-posta başarıyla değiştirildi</string>
+    <string name="msg_password_changed">Şifre başarıyla değiştirildi</string>
+    <string name="msg_operation_failed">İşlem başarısız oldu. Lütfen tekrar deneyin.</string>
+    <string name="msg_no_backup">Yedek bulunamadı</string>
+    <string name="msg_language_changed">Dil değiştirildi, uygulama yeniden başlatılıyor…</string>
+    <string name="msg_importing">İçe aktarılıyor…</string>
+
+    <!-- Kapak fotoğrafı -->
+    <string name="cover_picker_title">Kapak Fotoğrafı Seç</string>
+    <string name="cover_option_camera">Kamera</string>
+    <string name="cover_option_gallery">Galeri</string>
+    <string name="error_camera_permission">Kamera izni gerekli</string>
+    <string name="cover_add_label">Kapak Ekle</string>
+
+    <!-- Kitap ekleme / düzenleme -->
+    <string name="error_title_required">Kitap başlığı zorunludur</string>
+    <string name="msg_book_added">Kitap eklendi!</string>
+    <string name="msg_book_updated">Kitap güncellendi!</string>
+    <string name="hint_isbn">ISBN</string>
+    <string name="hint_notes">Bu kitap hakkında notlar…</string>
+    <string name="label_rating">Puanım</string>
+    <string name="label_notes">Notlarım</string>
+    <string name="btn_save">Kaydet</string>
+    <string name="btn_delete_book">Kitabı Sil</string>
+
+    <!-- Kitap düzenleme ekranı -->
+    <string name="edit_book_title">Kitabı Düzenle</string>
+    <string name="msg_unsaved_changes">Kaydedilmemiş değişiklikler</string>
+    <string name="msg_discard_changes">Değişiklikler iptal edilsin mi?</string>
+    <string name="btn_discard">İptal Et</string>
+    <string name="confirm_delete_book_title">Kitabı Sil</string>
+    <string name="confirm_delete_book_msg">Bu kitabı kütüphanenizden silmek istediğinizden emin misiniz?</string>
+</resources>

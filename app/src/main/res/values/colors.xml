@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand -->
+    <color name="primary">#2E4B8A</color> <!-- Ana renk from rules.mdc -->
+    <color name="primary_light">#5C73AB</color>
+    <color name="primary_dark">#1A2D57</color>
+    <color name="primary_surface">#EBF0FB</color>
+    <color name="primary_alpha_10">#1A2E4B8A</color>
+    <color name="primary_alpha_20">#332E4B8A</color>
+    <color name="primary_alpha_50">#802E4B8A</color>
+
+    <!-- Accent -->
+    <color name="accent">#E8A838</color> <!-- Vurgu from rules.mdc -->
+    <color name="accent_light">#F2C77A</color>
+    <color name="accent_dark">#B37D20</color>
+    <color name="accent_surface">#FDF5E6</color>
+    <color name="accent_alpha_10">#1AE8A838</color>
+    <color name="accent_alpha_20">#33E8A838</color>
+
+    <!-- Background / Surface -->
+    <color name="background">#FAF8F4</color> <!-- Arka plan from rules.mdc -->
+    <color name="background_elevated">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F0F2F5</color>
+    <color name="background_dark">#0A1628</color>
+    <color name="background_elevated_dark">#10233C</color>
+    <color name="surface_dark">#132B4A</color>
+    <color name="surface_variant_dark">#1A3558</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A2E</color> <!-- Yazı from rules.mdc -->
+    <color name="text_secondary">#6B6B80</color> <!-- İkincil yazı from rules.mdc -->
+    <color name="text_hint">#9E9EA8</color>
+    <color name="text_disabled">#C0C0C8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#1A1A2E</color>
+    <color name="text_primary_dark">#F5F8FF</color>
+    <color name="text_secondary_dark">#C4D1E1</color>
+    <color name="text_hint_dark">#90A3BB</color>
+    <color name="text_disabled_dark">#6F8097</color>
+
+    <!-- Inputs -->
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_background_dark">#132B4A</color>
+    <color name="input_border">#E0E0E0</color>
+    <color name="input_border_dark">#2A4A73</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+    <color name="divider_dark">#254668</color>
+
+    <!-- Cards -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background_dark">#10233C</color>
+
+    <!-- Navigation -->
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_background_dark">#0B1F3A</color>
+    <color name="nav_active">#2E4B8A</color>
+    <color name="nav_inactive">#9E9EA8</color>
+    <color name="nav_inactive_dark">#90A3BB</color>
+    <color name="nav_indicator">#1A2E4B8A</color>
+
+    <!-- Semantic -->
+    <color name="success">#4CD47A</color>
+    <color name="success_surface">#193526</color>
+    <color name="success_dark">#4CD47A</color>
+    <color name="error">#FF6B6B</color>
+    <color name="error_surface">#3A1E25</color>
+    <color name="error_dark">#FF6B6B</color>
+    <color name="warning">#F4B400</color>
+    <color name="info">#66B2FF</color>
+
+    <!-- Home/Stats -->
+    <color name="goal_card_bg">#2E4B8A</color> <!-- Keep dark for contrast or change to light? Let's use primary color -->
+    <color name="goal_card_text">#FFFFFF</color>
+    <color name="goal_card_text_muted">#C4D1E1</color>
+    <color name="goal_progress_track">#1AFFFFFF</color>
+    <color name="goal_progress_indicator">#E8A838</color>
+    <color name="stat_total_icon">#E8A838</color>
+    <color name="stat_read_icon">#4CD47A</color>
+    <color name="stat_reading_icon">#2E4B8A</color>
+    <color name="stat_to_read_icon">#FF8A3D</color>
+
+    <!-- BottomSheet/Cursor -->
+    <color name="bottom_sheet_bg">#FFFFFF</color>
+    <color name="bottom_sheet_bg_dark">#10233C</color>
+    <color name="bottom_sheet_handle">#E0E0E0</color>
+    <color name="bottom_sheet_handle_dark">#2A4A73</color>
+    <color name="cursor_color">#2E4B8A</color>
+    <color name="overlay_scrim">#80000000</color>
+
+    <!-- Legacy aliases -->
+    <color name="cream_background">@color/background</color>
+    <color name="navy_primary">@color/primary</color>
+    <color name="navy_primary_alpha_10">@color/primary_alpha_10</color>
+    <color name="navy_dark">@color/primary_dark</color>
+    <color name="amber_accent">@color/accent</color>
+    <color name="success_green">@color/success</color>
+    <color name="error_red">@color/error</color>
+</resources>

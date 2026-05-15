@@ -1,0 +1,42 @@
+# KitaplıkApp — Proje Kuralları
+
+## Proje Bilgisi
+Android uygulaması, Kotlin dili, MVVM mimarisi.
+
+## Zorunlu Kurallar
+
+### Kod Yazımı
+- ViewBinding kullanma, sadece findViewById kullan
+- Her kod bloğunun yanında Türkçe açıklama olsun
+- Mevcut çalışan kodlara zarar verme
+
+### Sayfa Geçişleri
+- Activity geçişleri: Intent ile
+- Fragment geçişleri: supportFragmentManager ile
+- Bottom Navigation geçişleri: supportFragmentManager ile
+
+### Firebase
+- Auth: FirebaseAuth.getInstance()
+- Firestore: FirebaseFirestore.getInstance()
+- Storage: FirebaseStorage.getInstance()
+- Kullanıcı verisi: users/{userId}/books/{bookId}
+
+### Renkler
+- Arka plan: #FAF8F4
+- Ana renk: #2E4B8A
+- Vurgu: #E8A838
+- Yazı: #1A1A2E
+- İkincil yazı: #6B6B80
+
+### Veri Modeli
+Book data class Serializable implement eder.
+Status değerleri: "reading", "to_read", "read"
+
+## Dosya Yapısı
+- ui/auth/ → Login, Register, ForgotPassword
+- ui/main/ → MainActivity, Fragments
+- model/ → Book, GoogleBooksResponse
+- repository/ → BooksRepository
+- network/ → GoogleBooksApiService
+- util/ → StorageUtil
+- viewmodel/ → SearchViewModel
