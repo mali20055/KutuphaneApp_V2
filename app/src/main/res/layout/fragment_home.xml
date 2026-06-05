@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            app:cardBackgroundColor="@color/goal_card_bg"
+            app:cardBackgroundColor="@color/surface"
             app:cardCornerRadius="16dp"
             app:cardElevation="0dp">
 
@@ -126,7 +126,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="6dp"
-                app:cardBackgroundColor="@color/card_background"
+                app:cardBackgroundColor="@color/surface"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp">
 
@@ -168,7 +168,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="6dp"
-                app:cardBackgroundColor="@color/card_background"
+                app:cardBackgroundColor="@color/surface"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp">
 
@@ -210,7 +210,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="6dp"
-                app:cardBackgroundColor="@color/card_background"
+                app:cardBackgroundColor="@color/surface"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp">
 
@@ -252,7 +252,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="6dp"
-                app:cardBackgroundColor="@color/card_background"
+                app:cardBackgroundColor="@color/surface"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp">
 

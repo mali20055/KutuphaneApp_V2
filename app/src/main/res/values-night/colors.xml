@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark mode uses adjusted tokens for contrast -->
-    <color name="primary">#D4A96A</color> <!-- Ana renk (yeni tema) -->
-    <color name="primary_light">#99CCFF</color>
+    <!-- Gece modu da aynı kahve/antika paletini kullanır -->
+    <color name="primary">#D4A96A</color>
+    <color name="primary_light">#E0BE8A</color>
     <color name="primary_dark">#B8894A</color>
-    <color name="primary_surface">#132B4A</color>
+    <color name="primary_surface">#4A2E1A</color>
     <color name="accent">#D4A96A</color>
-    <color name="accent_light">#FFD15A</color>
-    <color name="accent_dark">#C58E00</color>
+    <color name="accent_light">#F2C77A</color>
+    <color name="accent_dark">#B37D20</color>
 
     <color name="background">#2C1810</color>
-    <color name="background_elevated">#10233C</color>
+    <color name="background_elevated">#4A2E1A</color>
     <color name="surface">#3D2416</color>
     <color name="surface_variant">#4A2E1A</color>
 
     <color name="text_primary">#F0D9B5</color>
     <color name="text_secondary">#A07850</color>
-    <color name="text_hint">#90A3BB</color>
-    <color name="text_disabled">#6F8097</color>
-    <color name="text_on_primary">#0A1628</color> <!-- Dark text on light primary backgrounds -->
+    <color name="text_hint">#8A6A4A</color>
+    <color name="text_disabled">#6F5640</color>
+    <color name="text_on_primary">#2C1810</color>
     <color name="text_on_accent">#2C1810</color>
     <color name="on_primary">#2C1810</color>
     <color name="border">#5C3820</color>
 
-    <color name="input_background">#132B4A</color>
-    <color name="input_border">#2A4A73</color>
-    <color name="divider">#254668</color>
-    <color name="card_background">#10233C</color>
+    <color name="input_background">#3D2416</color>
+    <color name="input_border">#5C3820</color>
+    <color name="divider">#5C3820</color>
+    <color name="card_background">#3D2416</color>
 
-    <color name="nav_background">#0B1F3A</color>
-    <color name="nav_active">#F4B400</color>
-    <color name="nav_inactive">#90A3BB</color>
-    <color name="nav_indicator">#33F4B400</color>
+    <color name="nav_background">#2C1810</color>
+    <color name="nav_active">#D4A96A</color>
+    <color name="nav_inactive">#A07850</color>
+    <color name="nav_indicator">#33D4A96A</color>
 
     <color name="success">#4CD47A</color>
     <color name="error">#C0392B</color>
     <color name="warning">#F4B400</color>
     <color name="info">#66B2FF</color>
 
-    <color name="bottom_sheet_bg">#10233C</color>
-    <color name="bottom_sheet_handle">#2A4A73</color>
-    <color name="cursor_color">#F4B400</color>
+    <color name="bottom_sheet_bg">#3D2416</color>
+    <color name="bottom_sheet_handle">#5C3820</color>
+    <color name="cursor_color">#D4A96A</color>
     <color name="overlay_scrim">#80000000</color>
 
-    <color name="stat_total_icon">#F4B400</color>
+    <color name="stat_total_icon">#D4A96A</color>
     <color name="stat_read_icon">#4CD47A</color>
-    <color name="stat_reading_icon">#66B2FF</color>
+    <color name="stat_reading_icon">#D4A96A</color>
     <color name="stat_to_read_icon">#FF8A3D</color>
 </resources>

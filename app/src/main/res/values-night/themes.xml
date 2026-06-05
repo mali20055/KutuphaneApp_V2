@@ -9,6 +9,7 @@
 
         <item name="colorSurface">@color/surface</item>
         <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorPrimaryContainer">@color/surface</item>
         <item name="android:colorBackground">@color/background</item>
         <item name="colorBackgroundFloating">@color/background_elevated</item>
         <item name="colorOnPrimary">@color/text_on_primary</item>
@@ -25,7 +26,7 @@
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@color/background</item>
-        <item name="android:navigationBarColor">@color/nav_background</item>
+        <item name="android:navigationBarColor">@color/background</item>
 
         <item name="colorControlActivated">@color/accent</item>
         <item name="colorControlHighlight">@color/accent_alpha_20</item>

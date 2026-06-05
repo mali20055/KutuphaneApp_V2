@@ -275,7 +275,7 @@
                 android:layout_marginBottom="24dp"
                 android:backgroundTint="@color/accent"
                 android:text="@string/btn_save"
-                android:textColor="@color/white"
+                android:textColor="@color/text_on_accent"
                 app:cornerRadius="14dp" />
 
         </LinearLayout>

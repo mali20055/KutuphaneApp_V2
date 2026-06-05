@@ -5,67 +5,67 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Brand -->
-    <color name="primary">#D4A96A</color> <!-- Ana renk (yeni tema) -->
-    <color name="primary_light">#5C73AB</color>
+    <color name="primary">#D4A96A</color> <!-- Ana renk (kahve/antika tema) -->
+    <color name="primary_light">#E0BE8A</color>
     <color name="primary_dark">#B8894A</color>
-    <color name="primary_surface">#EBF0FB</color>
-    <color name="primary_alpha_10">#1A2E4B8A</color>
-    <color name="primary_alpha_20">#332E4B8A</color>
-    <color name="primary_alpha_50">#802E4B8A</color>
+    <color name="primary_surface">#4A2E1A</color>
+    <color name="primary_alpha_10">#1AD4A96A</color>
+    <color name="primary_alpha_20">#33D4A96A</color>
+    <color name="primary_alpha_50">#80D4A96A</color>
 
     <!-- Accent -->
-    <color name="accent">#D4A96A</color> <!-- Vurgu (yeni tema) -->
+    <color name="accent">#D4A96A</color> <!-- Vurgu (kahve/antika tema) -->
     <color name="accent_light">#F2C77A</color>
     <color name="accent_dark">#B37D20</color>
-    <color name="accent_surface">#FDF5E6</color>
-    <color name="accent_alpha_10">#1AE8A838</color>
-    <color name="accent_alpha_20">#33E8A838</color>
+    <color name="accent_surface">#4A2E1A</color>
+    <color name="accent_alpha_10">#1AD4A96A</color>
+    <color name="accent_alpha_20">#33D4A96A</color>
 
     <!-- Background / Surface -->
-    <color name="background">#2C1810</color> <!-- Arka plan (yeni tema) -->
-    <color name="background_elevated">#FFFFFF</color>
+    <color name="background">#2C1810</color> <!-- Arka plan (kahve/antika tema) -->
+    <color name="background_elevated">#4A2E1A</color>
     <color name="surface">#3D2416</color>
     <color name="surface_variant">#4A2E1A</color>
-    <color name="background_dark">#0A1628</color>
-    <color name="background_elevated_dark">#10233C</color>
-    <color name="surface_dark">#132B4A</color>
-    <color name="surface_variant_dark">#1A3558</color>
+    <color name="background_dark">#2C1810</color>
+    <color name="background_elevated_dark">#3D2416</color>
+    <color name="surface_dark">#3D2416</color>
+    <color name="surface_variant_dark">#4A2E1A</color>
 
     <!-- Text -->
-    <color name="text_primary">#F0D9B5</color> <!-- Yazı (yeni tema) -->
-    <color name="text_secondary">#A07850</color> <!-- İkincil yazı (yeni tema) -->
-    <color name="text_hint">#9E9EA8</color>
-    <color name="text_disabled">#C0C0C8</color>
-    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_primary">#F0D9B5</color> <!-- Yazı (krem) -->
+    <color name="text_secondary">#A07850</color> <!-- İkincil yazı -->
+    <color name="text_hint">#8A6A4A</color>
+    <color name="text_disabled">#6F5640</color>
+    <color name="text_on_primary">#2C1810</color>
     <color name="text_on_accent">#2C1810</color>
     <color name="on_primary">#2C1810</color>
     <color name="border">#5C3820</color>
-    <color name="text_primary_dark">#F5F8FF</color>
-    <color name="text_secondary_dark">#C4D1E1</color>
-    <color name="text_hint_dark">#90A3BB</color>
-    <color name="text_disabled_dark">#6F8097</color>
+    <color name="text_primary_dark">#F0D9B5</color>
+    <color name="text_secondary_dark">#A07850</color>
+    <color name="text_hint_dark">#8A6A4A</color>
+    <color name="text_disabled_dark">#6F5640</color>
 
     <!-- Inputs -->
-    <color name="input_background">#FFFFFF</color>
-    <color name="input_background_dark">#132B4A</color>
-    <color name="input_border">#E0E0E0</color>
-    <color name="input_border_dark">#2A4A73</color>
+    <color name="input_background">#3D2416</color>
+    <color name="input_background_dark">#3D2416</color>
+    <color name="input_border">#5C3820</color>
+    <color name="input_border_dark">#5C3820</color>
 
     <!-- Divider -->
-    <color name="divider">#E0E0E0</color>
-    <color name="divider_dark">#254668</color>
+    <color name="divider">#5C3820</color>
+    <color name="divider_dark">#5C3820</color>
 
     <!-- Cards -->
-    <color name="card_background">#FFFFFF</color>
-    <color name="card_background_dark">#10233C</color>
+    <color name="card_background">#3D2416</color>
+    <color name="card_background_dark">#3D2416</color>
 
     <!-- Navigation -->
-    <color name="nav_background">#FFFFFF</color>
-    <color name="nav_background_dark">#0B1F3A</color>
-    <color name="nav_active">#2E4B8A</color>
-    <color name="nav_inactive">#9E9EA8</color>
-    <color name="nav_inactive_dark">#90A3BB</color>
-    <color name="nav_indicator">#1A2E4B8A</color>
+    <color name="nav_background">#2C1810</color>
+    <color name="nav_background_dark">#2C1810</color>
+    <color name="nav_active">#D4A96A</color>
+    <color name="nav_inactive">#A07850</color>
+    <color name="nav_inactive_dark">#A07850</color>
+    <color name="nav_indicator">#33D4A96A</color>
 
     <!-- Semantic -->
     <color name="success">#4CD47A</color>
@@ -73,27 +73,27 @@
     <color name="success_dark">#4CD47A</color>
     <color name="error">#C0392B</color>
     <color name="error_surface">#3A1E25</color>
-    <color name="error_dark">#FF6B6B</color>
+    <color name="error_dark">#C0392B</color>
     <color name="warning">#F4B400</color>
     <color name="info">#66B2FF</color>
 
     <!-- Home/Stats -->
-    <color name="goal_card_bg">#2E4B8A</color> <!-- Keep dark for contrast or change to light? Let's use primary color -->
-    <color name="goal_card_text">#FFFFFF</color>
-    <color name="goal_card_text_muted">#C4D1E1</color>
-    <color name="goal_progress_track">#1AFFFFFF</color>
-    <color name="goal_progress_indicator">#E8A838</color>
-    <color name="stat_total_icon">#E8A838</color>
+    <color name="goal_card_bg">#3D2416</color>
+    <color name="goal_card_text">#F0D9B5</color>
+    <color name="goal_card_text_muted">#A07850</color>
+    <color name="goal_progress_track">#335C3820</color>
+    <color name="goal_progress_indicator">#D4A96A</color>
+    <color name="stat_total_icon">#D4A96A</color>
     <color name="stat_read_icon">#4CD47A</color>
-    <color name="stat_reading_icon">#2E4B8A</color>
+    <color name="stat_reading_icon">#D4A96A</color>
     <color name="stat_to_read_icon">#FF8A3D</color>
 
     <!-- BottomSheet/Cursor -->
-    <color name="bottom_sheet_bg">#FFFFFF</color>
-    <color name="bottom_sheet_bg_dark">#10233C</color>
-    <color name="bottom_sheet_handle">#E0E0E0</color>
-    <color name="bottom_sheet_handle_dark">#2A4A73</color>
-    <color name="cursor_color">#2E4B8A</color>
+    <color name="bottom_sheet_bg">#3D2416</color>
+    <color name="bottom_sheet_bg_dark">#3D2416</color>
+    <color name="bottom_sheet_handle">#5C3820</color>
+    <color name="bottom_sheet_handle_dark">#5C3820</color>
+    <color name="cursor_color">#D4A96A</color>
     <color name="overlay_scrim">#80000000</color>
 
     <!-- Legacy aliases -->

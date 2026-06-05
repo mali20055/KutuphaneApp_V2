@@ -16,10 +16,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary"
+            android:background="@color/surface"
             app:navigationIcon="@drawable/ic_arrow_back"
-            app:navigationIconTint="@color/text_on_primary"
-            app:titleTextColor="@color/text_on_primary" />
+            app:navigationIconTint="@color/primary"
+            app:titleTextColor="@color/primary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
