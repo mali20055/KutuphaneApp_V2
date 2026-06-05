@@ -16,6 +16,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.firestore.Query
 
 class HomeFragment : Fragment() {
@@ -38,6 +39,9 @@ class HomeFragment : Fragment() {
 
     private val db = FirebaseFirestore.getInstance()
     private val auth = FirebaseAuth.getInstance()
+
+    private var userListener: ListenerRegistration? = null
+    private var booksListener: ListenerRegistration? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -86,7 +90,8 @@ class HomeFragment : Fragment() {
 
         // Hedef bilgisini çek (varsayılan 24)
         currentUser?.uid?.let { uid ->
-            db.collection("users").document(uid).addSnapshotListener { snapshot, _ ->
+            userListener?.remove()
+            userListener = db.collection("users").document(uid).addSnapshotListener { snapshot, _ ->
                 val goal = snapshot?.getLong("readingGoal")?.toInt() ?: 24
                 // Mevcut okunan sayısını koruyarak UI'ı güncelle
                 val readCount = tvReadBooks.text.toString().toIntOrNull() ?: 0
@@ -98,7 +103,8 @@ class HomeFragment : Fragment() {
     private fun listenToBooks() {
         val userId = auth.currentUser?.uid ?: return
 
-        db.collection("users").document(userId).collection("books")
+        booksListener?.remove()
+        booksListener = db.collection("users").document(userId).collection("books")
             .orderBy("addedAt", Query.Direction.DESCENDING)
             .addSnapshotListener { snapshots, e ->
                 if (e != null || snapshots == null) return@addSnapshotListener
@@ -151,5 +157,13 @@ class HomeFragment : Fragment() {
         btnProfile.setOnClickListener {
             (activity as? MainActivity)?.seciliMenuOgesiniAyarla(R.id.nav_profil)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        userListener?.remove()
+        userListener = null
+        booksListener?.remove()
+        booksListener = null
     }
 }

@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Dark mode uses adjusted tokens for contrast -->
-    <color name="primary">#66B2FF</color> <!-- Light blue for visibility on dark backgrounds -->
+    <color name="primary">#D4A96A</color> <!-- Ana renk (yeni tema) -->
     <color name="primary_light">#99CCFF</color>
-    <color name="primary_dark">#0B1F3A</color>
+    <color name="primary_dark">#B8894A</color>
     <color name="primary_surface">#132B4A</color>
-    <color name="accent">#F4B400</color>
+    <color name="accent">#D4A96A</color>
     <color name="accent_light">#FFD15A</color>
     <color name="accent_dark">#C58E00</color>
 
-    <color name="background">#0A1628</color>
+    <color name="background">#2C1810</color>
     <color name="background_elevated">#10233C</color>
-    <color name="surface">#132B4A</color>
-    <color name="surface_variant">#1A3558</color>
+    <color name="surface">#3D2416</color>
+    <color name="surface_variant">#4A2E1A</color>
 
-    <color name="text_primary">#F5F8FF</color>
-    <color name="text_secondary">#C4D1E1</color>
+    <color name="text_primary">#F0D9B5</color>
+    <color name="text_secondary">#A07850</color>
     <color name="text_hint">#90A3BB</color>
     <color name="text_disabled">#6F8097</color>
     <color name="text_on_primary">#0A1628</color> <!-- Dark text on light primary backgrounds -->
-    <color name="text_on_accent">#0A1628</color>
+    <color name="text_on_accent">#2C1810</color>
+    <color name="on_primary">#2C1810</color>
+    <color name="border">#5C3820</color>
 
     <color name="input_background">#132B4A</color>
     <color name="input_border">#2A4A73</color>
@@ -32,7 +34,7 @@
     <color name="nav_indicator">#33F4B400</color>
 
     <color name="success">#4CD47A</color>
-    <color name="error">#FF6B6B</color>
+    <color name="error">#C0392B</color>
     <color name="warning">#F4B400</color>
     <color name="info">#66B2FF</color>
 

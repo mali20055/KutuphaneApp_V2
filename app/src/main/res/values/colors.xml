@@ -5,16 +5,16 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Brand -->
-    <color name="primary">#2E4B8A</color> <!-- Ana renk from rules.mdc -->
+    <color name="primary">#D4A96A</color> <!-- Ana renk (yeni tema) -->
     <color name="primary_light">#5C73AB</color>
-    <color name="primary_dark">#1A2D57</color>
+    <color name="primary_dark">#B8894A</color>
     <color name="primary_surface">#EBF0FB</color>
     <color name="primary_alpha_10">#1A2E4B8A</color>
     <color name="primary_alpha_20">#332E4B8A</color>
     <color name="primary_alpha_50">#802E4B8A</color>
 
     <!-- Accent -->
-    <color name="accent">#E8A838</color> <!-- Vurgu from rules.mdc -->
+    <color name="accent">#D4A96A</color> <!-- Vurgu (yeni tema) -->
     <color name="accent_light">#F2C77A</color>
     <color name="accent_dark">#B37D20</color>
     <color name="accent_surface">#FDF5E6</color>
@@ -22,22 +22,24 @@
     <color name="accent_alpha_20">#33E8A838</color>
 
     <!-- Background / Surface -->
-    <color name="background">#FAF8F4</color> <!-- Arka plan from rules.mdc -->
+    <color name="background">#2C1810</color> <!-- Arka plan (yeni tema) -->
     <color name="background_elevated">#FFFFFF</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="surface_variant">#F0F2F5</color>
+    <color name="surface">#3D2416</color>
+    <color name="surface_variant">#4A2E1A</color>
     <color name="background_dark">#0A1628</color>
     <color name="background_elevated_dark">#10233C</color>
     <color name="surface_dark">#132B4A</color>
     <color name="surface_variant_dark">#1A3558</color>
 
     <!-- Text -->
-    <color name="text_primary">#1A1A2E</color> <!-- Yazı from rules.mdc -->
-    <color name="text_secondary">#6B6B80</color> <!-- İkincil yazı from rules.mdc -->
+    <color name="text_primary">#F0D9B5</color> <!-- Yazı (yeni tema) -->
+    <color name="text_secondary">#A07850</color> <!-- İkincil yazı (yeni tema) -->
     <color name="text_hint">#9E9EA8</color>
     <color name="text_disabled">#C0C0C8</color>
     <color name="text_on_primary">#FFFFFF</color>
-    <color name="text_on_accent">#1A1A2E</color>
+    <color name="text_on_accent">#2C1810</color>
+    <color name="on_primary">#2C1810</color>
+    <color name="border">#5C3820</color>
     <color name="text_primary_dark">#F5F8FF</color>
     <color name="text_secondary_dark">#C4D1E1</color>
     <color name="text_hint_dark">#90A3BB</color>
@@ -69,7 +71,7 @@
     <color name="success">#4CD47A</color>
     <color name="success_surface">#193526</color>
     <color name="success_dark">#4CD47A</color>
-    <color name="error">#FF6B6B</color>
+    <color name="error">#C0392B</color>
     <color name="error_surface">#3A1E25</color>
     <color name="error_dark">#FF6B6B</color>
     <color name="warning">#F4B400</color>

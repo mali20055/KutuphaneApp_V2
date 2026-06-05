@@ -2,6 +2,7 @@ package com.example.kutuphaneapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
@@ -9,9 +10,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kutuphaneapp.util.GoogleAuthHelper
 import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.common.SignInButton
 import com.google.android.gms.common.api.ApiException
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.progressindicator.CircularProgressIndicator
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
@@ -28,6 +29,11 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
     private lateinit var googleSignInLauncher: ActivityResultLauncher<Intent>
+
+    private lateinit var btnLogin: MaterialButton
+    private lateinit var btnGoogleSignIn: MaterialButton
+    private lateinit var progressLogin: CircularProgressIndicator
+    private var loginButtonText: CharSequence = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,8 +52,10 @@ class LoginActivity : AppCompatActivity() {
 
         val etEmail = findViewById<TextInputEditText>(R.id.etEmail)
         val etPassword = findViewById<TextInputEditText>(R.id.etPassword)
-        val btnLogin = findViewById<MaterialButton>(R.id.btnLogin)
-        val btnGoogleSignIn = findViewById<SignInButton>(R.id.btnGoogleSignIn)
+        btnLogin = findViewById(R.id.btnLogin)
+        btnGoogleSignIn = findViewById(R.id.btnGoogleSignIn)
+        progressLogin = findViewById(R.id.progressLogin)
+        loginButtonText = btnLogin.text
         val tvRegister = findViewById<TextView>(R.id.tvRegister)
         val tvForgotPassword = findViewById<TextView>(R.id.tvForgotPassword)
 
@@ -56,11 +64,20 @@ class LoginActivity : AppCompatActivity() {
             if (result.resultCode == RESULT_OK) {
                 val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
                 try {
-                    val account = task.getResult(ApiException::class.java)!!
-                    firebaseAuthWithGoogle(account.idToken!!)
+                    val account = task.getResult(ApiException::class.java)
+                    val idToken = account?.idToken
+                    if (idToken != null) {
+                        firebaseAuthWithGoogle(idToken)
+                    } else {
+                        setLoading(false)
+                        Toast.makeText(this, "Google girişi başarısız, tekrar deneyin", Toast.LENGTH_SHORT).show()
+                    }
                 } catch (e: ApiException) {
-                    Toast.makeText(this, "Google ile giriş yapılamadı: ${e.message}", Toast.LENGTH_SHORT).show()
+                    setLoading(false)
+                    Toast.makeText(this, "Google girişi başarısız, tekrar deneyin", Toast.LENGTH_SHORT).show()
                 }
+            } else {
+                setLoading(false)
             }
         }
 
@@ -73,17 +90,20 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            setLoading(true)
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         navigateToMain()
                     } else {
+                        setLoading(false)
                         Toast.makeText(this, "Giriş başarısız: ${task.exception?.localizedMessage}", Toast.LENGTH_LONG).show()
                     }
                 }
         }
 
         btnGoogleSignIn.setOnClickListener {
+            setLoading(true)
             val signInIntent = googleAuthHelper.getSignInClient().signInIntent
             googleSignInLauncher.launch(signInIntent)
         }
@@ -107,9 +127,17 @@ class LoginActivity : AppCompatActivity() {
                         saveUserToFirestore(it.uid, it.displayName, it.email, it.photoUrl?.toString())
                     }
                 } else {
+                    setLoading(false)
                     Toast.makeText(this, "Firebase kimlik doğrulaması başarısız.", Toast.LENGTH_SHORT).show()
                 }
             }
+    }
+
+    private fun setLoading(loading: Boolean) {
+        btnLogin.isEnabled = !loading
+        btnGoogleSignIn.isEnabled = !loading
+        btnLogin.text = if (loading) "" else loginButtonText
+        progressLogin.visibility = if (loading) View.VISIBLE else View.GONE
     }
 
     private fun saveUserToFirestore(uid: String, name: String?, email: String?, photoUrl: String?) {
@@ -126,6 +154,7 @@ class LoginActivity : AppCompatActivity() {
                 navigateToMain()
             }
             .addOnFailureListener { e ->
+                setLoading(false)
                 Toast.makeText(this, "Kullanıcı kaydedilemedi: ${e.localizedMessage}", Toast.LENGTH_SHORT).show()
             }
     }

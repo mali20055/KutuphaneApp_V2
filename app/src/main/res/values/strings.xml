@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">kutuphaneApp</string>
+    <string name="app_name">KitaplıkApp</string>
     <string name="stats_title">İstatistikler</string>
     <string name="total_books">Toplam Kitap</string>
     <string name="read_books">Okunan Kitap</string>

@@ -16,7 +16,15 @@
         <item name="colorError">@color/error</item>
         <item name="colorOnError">@color/text_primary</item>
 
-        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+
+        <item name="fontFamily">@font/josefin_sans</item>
+        <item name="android:fontFamily">@font/josefin_sans</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/background</item>
         <item name="android:navigationBarColor">@color/nav_background</item>
 
         <item name="colorControlActivated">@color/accent</item>
